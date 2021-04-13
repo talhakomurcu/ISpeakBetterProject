@@ -1,0 +1,1 @@
+{"uuid":"7bcc8e58-d0bb-4b73-b7f5-ed309c4117c7","name":"tests.BlogTest.setUp","children":["6ceba132-2349-4641-8261-8b2bce342aa9"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1618356273425,"stop":1618356280715}],"afters":[],"links":[],"start":1618356273425,"stop":1618356280715}
