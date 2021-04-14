@@ -34,37 +34,46 @@ public class CoursesTest extends BasePage {
     }
 
     @Test
-    public void testCase1(){
+    public void testCase1() throws InterruptedException{
         CoursesPage.clickToCoursesBtn();
+        Thread.sleep(1000);
         String Url= "https://ispeakbetter.com/courses";
         String actualUrl=driver.getCurrentUrl();
         Assert.assertEquals(Url, actualUrl);
     }
     @Test
-    public void testCase2(){
+    public void testCase2()throws InterruptedException{
         CoursesPage.clickToCoursesBtn();
+        Thread.sleep(1000);
         CoursesPage.clickToFirstEnrolmentBtn();
+        Thread.sleep(1000);
         boolean verification=CoursesPage.isEnrolmentPageOpened();
         Assert.assertTrue(verification);
     }
     @Test
-    public void testCase3(){
+    public void testCase3()throws InterruptedException{
         CoursesPage.clickToCoursesBtn();
+        Thread.sleep(1000);
         CoursesPage.clickToSecondEnrolmentBtn();
+        Thread.sleep(1000);
         boolean verification=CoursesPage.isEnrolmentPageOpened();
         Assert.assertTrue(verification);
     }
     @Test
-    public void testCase4(){
+    public void testCase4()throws InterruptedException{
         CoursesPage.clickToCoursesBtn();
+        Thread.sleep(1000);
         CoursesPage.clickToThirdEnrolmentBtn();
+        Thread.sleep(1000);
         boolean verification=CoursesPage.isEnrolmentPageOpened();
         Assert.assertTrue(verification);
     }
     @Test
-    public void testCase5(){
+    public void testCase5()throws InterruptedException{
         CoursesPage.clickToCoursesBtn();
+        Thread.sleep(1000);
         CoursesPage.clickToFourthEnrolmentBtn();
+        Thread.sleep(1000);
         boolean verification=CoursesPage.isEnrolmentPageOpened();
         Assert.assertTrue(verification);
     }
