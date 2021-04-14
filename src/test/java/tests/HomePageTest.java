@@ -45,14 +45,17 @@ public class HomePageTest extends BasePage {
         Assert.assertTrue(driver.findElement(By.xpath("//*[@id=\"btnFree\"]")).isEnabled());
     }
     @Test
-    public void testCase2(){
+    public void testCase2() throws InterruptedException{
+        Thread.sleep(1000);
         HelperMethods.doClick(driver.findElement(By.xpath("//*[@id=\"about-section\"]/div/div/div[1]/a")));
+        Thread.sleep(1000);
         String expectedUrl = "https://ispeakbetter.com/?lang=en";
         String actualUrl = driver.getCurrentUrl();
         Assert.assertEquals(expectedUrl, actualUrl);
     }
     @Test
     public void testCase3() throws InterruptedException{
+        Thread.sleep(1000);
         HelperMethods.doClick(driver.findElement(By.xpath("//a[@data-text='Learn more']")));
         Thread.sleep(1000);
         String expectedUrl = "https://ispeakbetter.com/about";
