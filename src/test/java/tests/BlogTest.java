@@ -34,6 +34,7 @@ public class BlogTest extends BasePage{
 
     @Test
     public void testCase1() throws InterruptedException{
+        Thread.sleep(1000);
         driver.findElement(By.xpath("//span[@data-hover='Blog']")).click();
         Thread.sleep(1000);
         driver.findElement(By.xpath("//body/div[@id='wrapper']/div[@id='main']/div[@class='container']" +
@@ -47,6 +48,7 @@ public class BlogTest extends BasePage{
     }
     @Test
     public void testCase2() throws InterruptedException{
+        Thread.sleep(1000);
         driver.findElement(By.xpath("//span[@data-hover='Blog']")).click();
         Thread.sleep(1000);
         driver.findElement(By.xpath("//div[@class='vc_row wpb_row vc_row-fluid']//div[2]//div[2]//" +
@@ -60,16 +62,18 @@ public class BlogTest extends BasePage{
     }
     @Test
     public void testCase3() throws InterruptedException{
+          Thread.sleep(1000);
         driver.findElement(By.xpath("//span[@data-hover='Blog']")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//a[contains(text(),'Why you should enhance your English for the workpl')]")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//a[normalize-space()='3 Hacks to Learn English Better and Faster']")).click();
-        Thread.sleep(2000);
-        String Url= "https://blog.ispeakbetter.com/3-hacks-to-learn-english-better-and-faster/";
+        String Url= "https://blog.ispeakbetter.com/why-you-should-enhance-your-english-for-the-workplace/";
         String actualUrl=driver.getCurrentUrl();
         Assert.assertEquals(Url, actualUrl);
     }
     @Test
     public void testCase4() throws InterruptedException{
+        Thread.sleep(1000);
         driver.findElement(By.xpath("//span[@data-hover='Blog']")).click();
         Thread.sleep(1000);
         driver.findElement(By.xpath("//a[contains(text(),'Aced your TOEFL/IELTS? Here are the top destinatio')]")).click();
@@ -82,11 +86,12 @@ public class BlogTest extends BasePage{
     }
     @Test
     public void testCase5() throws InterruptedException{
+        Thread.sleep(1000);
         driver.findElement(By.xpath("//span[@data-hover='Blog']")).click();
-        Thread.sleep(2000);
-        driver.findElement(By.xpath("//a[normalize-space()='Online learning']")).click();
-        Thread.sleep(2000);
-        String Url= "https://blog.ispeakbetter.com/tag/online-learning/";
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//div[@class='vc_row wpb_row vc_row-fluid']//div[2]//div[2]//div[1]//div[2]//div[1]//div[1]//div[3]//a[1]")).click();
+        Thread.sleep(1000);
+        String Url= "https://blog.ispeakbetter.com/category/english-article/";
         String actualUrl=driver.getCurrentUrl();
         Assert.assertEquals(Url, actualUrl);
     }
