@@ -57,7 +57,7 @@ public class HomePageTest extends BasePage {
         Thread.sleep(1000);
         String expectedUrl = "https://ispeakbetter.com/about";
         String actualUrl = driver.getCurrentUrl();
-        Assert.assertEquals(actualUrl, expectedUrl);
+        Assert.assertEquals(expectedUrl, actualUrl);
     }
     @Test
     public void testCase4(){
