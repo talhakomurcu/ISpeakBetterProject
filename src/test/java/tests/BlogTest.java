@@ -61,9 +61,9 @@ public class BlogTest extends BasePage{
     @Test
     public void testCase3() throws InterruptedException{
         driver.findElement(By.xpath("//span[@data-hover='Blog']")).click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//a[normalize-space()='3 Hacks to Learn English Better and Faster']")).click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         String Url= "https://blog.ispeakbetter.com/3-hacks-to-learn-english-better-and-faster/";
         String actualUrl=driver.getCurrentUrl();
         Assert.assertEquals(Url, actualUrl);
@@ -83,9 +83,9 @@ public class BlogTest extends BasePage{
     @Test
     public void testCase5() throws InterruptedException{
         driver.findElement(By.xpath("//span[@data-hover='Blog']")).click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//a[normalize-space()='Online learning']")).click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         String Url= "https://blog.ispeakbetter.com/tag/online-learning/";
         String actualUrl=driver.getCurrentUrl();
         Assert.assertEquals(Url, actualUrl);
