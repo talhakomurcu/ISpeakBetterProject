@@ -47,9 +47,9 @@ public class HomePageTest extends BasePage {
     @Test
     public void testCase2() throws InterruptedException{
         Thread.sleep(1000);
-        HelperMethods.doClick(driver.findElement(By.xpath("//*[@id=\"about-section\"]/div/div/div[1]/a")));
+       HelperMethods.doClick(driver.findElement(By.xpath("//*[@id=\"about-section\"]/div/div/div[1]/a")));
         Thread.sleep(1000);
-        String expectedUrl = "https://ispeakbetter.com/?lang=en";
+        String expectedUrl = "https://ispeakbetter.com/courses";
         String actualUrl = driver.getCurrentUrl();
         Assert.assertEquals(expectedUrl, actualUrl);
     }
