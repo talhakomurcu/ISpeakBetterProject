@@ -56,6 +56,7 @@ public class HomePageTest extends BasePage {
         HelperMethods.doClick(driver.findElement(By.xpath("//a[@data-text='Learn more']")));
         Thread.sleep(1000);
         String expectedUrl = "https://ispeakbetter.com/about";
+        Thread.sleep(1000);
         String actualUrl = driver.getCurrentUrl();
         Assert.assertEquals(expectedUrl, actualUrl);
     }
